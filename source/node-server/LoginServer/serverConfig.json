@@ -1,0 +1,20 @@
+{
+    "DB": {
+        "1": { "dbID": 1, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "2": { "dbID": 2, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "3": { "dbID": 3, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "4": { "dbID": 4, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "5": { "dbID": 5, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "6": { "dbID": 6, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "7": { "dbID": 7, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "8": { "dbID": 8, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "9": { "dbID": 9, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "10": { "dbID": 10, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "11": { "dbID": 11, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "12": { "dbID": 12, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "13": { "dbID": 13, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "14": { "dbID": 14, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "15": { "dbID": 15, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" },
+        "16": { "dbID": 16, "ip": "10.200.200.130", "port": 15001, "user": "GAME_User", "pw": "dkagh123!", "database": "COF_GAME", "description": "" }
+      }
+}

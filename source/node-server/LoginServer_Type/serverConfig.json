@@ -1,0 +1,20 @@
+{
+    "DB": {
+        "1": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "2": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "3": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "4": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "5": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "6": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "7": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "8": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "9": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "10": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "11": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "12": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "13": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "14": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "15": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" },
+        "16": { "dbID": 1, "ip": "0.0.0.0", "port": 0, "user": "0", "pw": "0", "database": "0", "description": "" }
+      }
+}

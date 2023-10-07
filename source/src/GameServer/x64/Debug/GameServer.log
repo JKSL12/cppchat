@@ -1,0 +1,28 @@
+﻿  Main.cpp
+  User.cpp
+  UserManager.cpp
+  pch.cpp
+  GameGlobal.cpp
+  GameServer.cpp
+  UserAcceptor.cpp
+  GameWorker.cpp
+  GameWorker_GAME.cpp
+  GameWorker_GAME_Dispatch.cpp
+E:\N\Server\src\GameServer\WORKER\GameWorker_GAME_Dispatch.cpp(31,2): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(54,10): warning C4476: 'printf' : 서식 지정자에 알 수 없는 형식 필드 문자 ','이(가) 있습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'TCHAR *'입니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): message : 서식 문자열에서 '%ls'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): message : 서식 문자열에서 '%lls'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): message : 서식 문자열에서 '%Ls'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): message : 서식 문자열에서 '%ws'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'const TCHAR *'입니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): message : 서식 문자열에서 '%ls'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): message : 서식 문자열에서 '%lls'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): message : 서식 문자열에서 '%Ls'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(116,9): message : 서식 문자열에서 '%ws'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(147,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'TCHAR *'입니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(147,9): message : 서식 문자열에서 '%ls'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(147,9): message : 서식 문자열에서 '%lls'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(147,9): message : 서식 문자열에서 '%Ls'을(를) 사용하는 것이 좋습니다.
+E:\N\Server\src\GameServer\WORKER\GameWorker.cpp(147,9): message : 서식 문자열에서 '%ws'을(를) 사용하는 것이 좋습니다.
+  GameServer.vcxproj -> E:\N\Server\x64\Debug\GameServer.exe

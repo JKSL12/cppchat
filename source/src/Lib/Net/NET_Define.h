@@ -1,0 +1,12 @@
+#pragma once
+
+namespace NET
+{
+	enum eDISPATCH_RESULT
+	{
+		DISPATCH_OK = 0,
+		DISPATCH_FAIL,
+		DISPATCH_INVALID_SESSION,
+		DISPATCH_INVALID_PACKET
+	};
+}

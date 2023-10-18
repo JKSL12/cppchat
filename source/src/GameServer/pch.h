@@ -21,7 +21,9 @@
 #include <tchar.h>
 
 #include <sstream>
+#include <cwchar>
 #include <string>
+#include <codecvt>
 #include <memory>
 #include <regex>
 #include <mutex>
@@ -44,6 +46,8 @@
 #include <chrono>
 #include <atomic>
 #include <random>
+
+#include "document.h"
 
 #include "COMMON/SERVER_Types.h"
 

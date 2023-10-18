@@ -105,13 +105,14 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;$(SolutionDir)LibExt\hiredis\include\hiredis;$(SolutionDir)LibExt\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)../boost_1_83_0/stage/lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)../boost_1_83_0/stage/lib;$(SolutionDir)LibExt/hiredis/lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>hiredisd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -123,7 +124,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;$(SolutionDir)LibExt\hiredis\include\hiredis;$(SolutionDir)LibExt\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
@@ -131,7 +132,8 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)../boost_1_83_0/stage/lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)../boost_1_83_0/stage/lib;$(SolutionDir)LibExt/hiredis/lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>hiredis.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -141,13 +143,14 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;$(SolutionDir)LibExt\hiredis\include\hiredis;$(SolutionDir)LibExt\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)../boost_1_83_0/stage/lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)../boost_1_83_0/stage/lib;$(SolutionDir)LibExt/hiredis/lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>hiredisd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -159,7 +162,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;$(SolutionDir)LibExt\hiredis\include\hiredis;$(SolutionDir)LibExt\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
@@ -167,7 +170,8 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)../boost_1_83_0/stage/lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)../boost_1_83_0/stage/lib;$(SolutionDir)LibExt/hiredis/lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>hiredis.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -175,6 +179,9 @@
     <ClCompile Include="OBJECT\User.cpp" />
     <ClCompile Include="OBJECT\UserManager.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="RedisCommon.cpp" />
+    <ClCompile Include="RedisConnection.cpp" />
+    <ClCompile Include="RedisConnectionPool.cpp" />
     <ClCompile Include="SERVER\GameGlobal.cpp" />
     <ClCompile Include="SERVER\GameServer.cpp" />
     <ClCompile Include="SERVER\UserAcceptor.cpp" />
@@ -188,6 +195,9 @@
     <ClInclude Include="OBJECT\UserManager.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PROTOCOL\Protocol_SYSTEM.h" />
+    <ClInclude Include="RedisCommon.h" />
+    <ClInclude Include="RedisConnection.h" />
+    <ClInclude Include="RedisConnectionPool.h" />
     <ClInclude Include="SERVER\GameGlobal.h" />
     <ClInclude Include="SERVER\GameServer.h" />
     <ClInclude Include="SERVER\UserAcceptor.h" />

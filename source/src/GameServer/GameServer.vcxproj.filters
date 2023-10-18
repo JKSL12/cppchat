@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Redis">
+      <UniqueIdentifier>{01ba40be-f058-4d7e-88a0-e1cfca303778}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -45,6 +48,15 @@
     <ClCompile Include="OBJECT\UserManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="RedisConnection.cpp">
+      <Filter>Redis</Filter>
+    </ClCompile>
+    <ClCompile Include="RedisConnectionPool.cpp">
+      <Filter>Redis</Filter>
+    </ClCompile>
+    <ClCompile Include="RedisCommon.cpp">
+      <Filter>Redis</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -76,6 +88,15 @@
     </ClInclude>
     <ClInclude Include="OBJECT\UserManager.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="RedisConnection.h">
+      <Filter>Redis</Filter>
+    </ClInclude>
+    <ClInclude Include="RedisConnectionPool.h">
+      <Filter>Redis</Filter>
+    </ClInclude>
+    <ClInclude Include="RedisCommon.h">
+      <Filter>Redis</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

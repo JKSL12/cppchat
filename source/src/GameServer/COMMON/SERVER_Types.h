@@ -13,6 +13,14 @@ namespace SERVER
 		STATE_RUNNING,
 		STATE_STOP
 	};
+
+	struct DATABASE_INFO
+	{
+		TCHAR	Host[24];
+		TCHAR	User[17];
+		TCHAR	PWD[17];
+		TCHAR	DB[17];
+	};
 }
 
 enum eSERVER_RESULT : INT8

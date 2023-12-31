@@ -1,6 +1,7 @@
 #include "../pch.h"
 #include "GameServer.h"
 #include "RedisCommon.h"
+#include "GameDBProcess.h"
 
 #if defined(_DEBUG)
 #pragma comment(lib, "hiredisD")
@@ -26,6 +27,20 @@ CGameServer::~CGameServer()
 
 eSERVER_RESULT CGameServer::PreInitialize()
 {
+	// DB
+	SERVER::DATABASE_INFO db_info;
+	_tcscpy_s(db_info.Host, _countof(db_info.Host), _T("127.0.0.1,0"));
+	_tcscpy_s(db_info.User, _countof(db_info.User), _T("user"));
+	_tcscpy_s(db_info.PWD, _countof(db_info.PWD), _T("pwd"));
+	_tcscpy_s(db_info.DB, _countof(db_info.DB), _T("db"));
+	
+	if (!CGameDBProcess::Instance()->Init(db_info))
+	{
+		return SERVER_FAIL;
+	}
+
+	CGameDBProcess::Instance()->PostQueryTest();
+
 	// ·¹µð½º
 	char charBuff[] = "127.0.0.1";
 	TCHAR szHost[256] = { 0, };

@@ -22,6 +22,9 @@ namespace NET
 
 		bool RegisterAcceptObj(CAcceptor* _acceptobj, INT16 _dispatch_max);
 
+	protected:
+		boost::thread_group		m_threadMgr;
+
 	private:
 		bool Start();									
 		void Stop();
@@ -32,9 +35,7 @@ namespace NET
 		virtual void OnStop() {}					
 		virtual bool OnRun() { return false; }
 
-		virtual CNetWorker* GetWorker() = 0;
-
-		boost::thread_group		m_threadMgr;
+		virtual CNetWorker* GetWorker() = 0;		
 
 		UINT16					m_io_thread_max;
 	};

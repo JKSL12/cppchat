@@ -16,9 +16,13 @@
 #include <windows.h>
 #include <io.h>
 #include <atlcoll.h>
+#include <sqlext.h>
+#include <sqltypes.h>
+#include <oledb.h>
 
 #include <stdio.h>
 #include <tchar.h>
+#include <strsafe.h>
 
 #include <sstream>
 #include <cwchar>

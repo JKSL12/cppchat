@@ -23,7 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{b4245cb8-f747-44b8-b96e-ef35ad290f92}</ProjectGuid>
     <RootNamespace>GameServer</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -107,6 +107,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;$(SolutionDir)LibExt\hiredis\include\hiredis;$(SolutionDir)LibExt\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,6 +127,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;$(SolutionDir)LibExt\hiredis\include\hiredis;$(SolutionDir)LibExt\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,6 +147,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;$(SolutionDir)LibExt\hiredis\include\hiredis;$(SolutionDir)LibExt\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -164,6 +167,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)../boost_1_83_0;./;../../../;../../;../;$(SolutionDir)Src;$(SolutionDir)Src\Common;$(SolutionDir)Src\Lib;$(SolutionDir)LibExt\hiredis\include\hiredis;$(SolutionDir)LibExt\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -175,10 +179,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="DBManager.cpp" />
+    <ClCompile Include="GameDB.cpp" />
+    <ClCompile Include="GameDBProcess.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="OBJECT\User.cpp" />
     <ClCompile Include="OBJECT\UserManager.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Query.cpp" />
     <ClCompile Include="RedisCommon.cpp" />
     <ClCompile Include="RedisConnection.cpp" />
     <ClCompile Include="RedisConnectionPool.cpp" />
@@ -191,10 +200,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="COMMON\SERVER_Types.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="DBManager.h" />
+    <ClInclude Include="GameDB.h" />
+    <ClInclude Include="GameDBProcess.h" />
     <ClInclude Include="OBJECT\User.h" />
     <ClInclude Include="OBJECT\UserManager.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PROTOCOL\Protocol_SYSTEM.h" />
+    <ClInclude Include="Query.h" />
     <ClInclude Include="RedisCommon.h" />
     <ClInclude Include="RedisConnection.h" />
     <ClInclude Include="RedisConnectionPool.h" />

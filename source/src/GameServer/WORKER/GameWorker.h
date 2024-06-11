@@ -2,12 +2,17 @@
 
 #include "Net/Global.h"
 #include "Net/NetWorker.h"
+#include "Object/User.h"
 
-class CGameWorker : public NET::CNetWorker
+class __declspec(align(MEMORY_ALLOCATION_ALIGNMENT)) CGameWorker 
+	: public NET::CNetWorker
+	, public IFinalizer
 {
 public:
 	CGameWorker(CGameServer& parent);
 	virtual ~CGameWorker();
+
+	bool OnFinalize(Object* obj);
 
 	void Send_SSNID(INT16 _ssnid, NET::CPacket* _packet);
 	NET::eDISPATCH_RESULT Send_USER(const CUser* pUser, NET::CPacket* pPacket);
@@ -15,6 +20,8 @@ public:
 
 private:
 	CGameServer& m_parent;
+
+	Allocator<CUser> _userObjectAlloc;
 
 public:
 

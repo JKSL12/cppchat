@@ -23,6 +23,8 @@
 #include <stdio.h>
 #include <tchar.h>
 #include <strsafe.h>
+#include <WinSock2.h>
+#include <assert.h>
 
 #include <sstream>
 #include <cwchar>
@@ -51,6 +53,9 @@
 #include <atomic>
 #include <random>
 
+
+#include <sys/stat.h>
+#include <boost/format.hpp>
 #include "document.h"
 
 #include "COMMON/SERVER_Types.h"

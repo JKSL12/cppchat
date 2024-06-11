@@ -25,10 +25,12 @@ namespace DB
 
 		nResult = ::SQLAllocHandle(SQL_HANDLE_STMT, hDBC, &m_hSTMT);
 
-		if (!SQL_SUCCEEDED(nResult))
+		/*if (!SQL_SUCCEEDED(nResult))
 		{
 			return nResult;
-		}
+		}*/
+
+		return nResult;
 	}
 
 	void CQuery::Release()

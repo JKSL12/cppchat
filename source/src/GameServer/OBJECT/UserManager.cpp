@@ -39,3 +39,10 @@ CUser* CUserManager::FindActiveUserFromSSNID(INT16 _ssnid)
 
 	return it->second;
 }
+
+eSERVER_RESULT CUserManager::Remove(CUser* _user)
+{
+	m_session_map.erase(_user->SSNID());
+
+	return SERVER_OK;
+}

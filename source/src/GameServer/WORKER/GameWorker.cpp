@@ -11,10 +11,20 @@
 CGameWorker::CGameWorker(CGameServer& parent)
 	: m_parent(parent)
 {
+	_userObjectAlloc.Reserve(100);
 }
 
 CGameWorker::~CGameWorker()
 {
+}
+
+bool CGameWorker::OnFinalize(Object* user)
+{
+	CUser* userObj = (CUser*)user;
+
+	GLOBAL::USER_MANAGER.Remove(userObj);
+
+	return true;
 }
 
 NET::eDISPATCH_RESULT CGameWorker::OnDispatch(INT16 _ssnid, NET::CPacket* _packet, ULONGLONG arrivedTick)
@@ -139,6 +149,8 @@ NET::eDISPATCH_RESULT CGameWorker::OnCloseSession(INT16 _ssnid, INT8 _mode)
 			});
 
 		_type = const_cast<TCHAR*>(TEXT("User"));
+
+		user->Release();
 	}
 	//else if (GLOBAL::SESSION_MANAGER.Find(_ssnid))
 	//

@@ -12,6 +12,8 @@ public:
 
 	CUser* FindActiveUserFromSSNID(INT16 _ssnid);
 
+	eSERVER_RESULT Remove(CUser* _user);
+
 	template <typename T>
 	void ForAllUsers(T&& lambda)
 	{

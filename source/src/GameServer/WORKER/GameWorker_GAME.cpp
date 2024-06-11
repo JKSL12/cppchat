@@ -12,8 +12,14 @@
 
 NET::eDISPATCH_RESULT CGameWorker::OnRecv_GS_LOGIN_REQ(INT16 _ssnid, PROTOCOL::GS_LOGIN_REQ* _req)
 {
-	auto _user = new CUser(_ssnid);
+	auto _user = reinterpret_cast<CUser*>(_userObjectAlloc.Get());
+
+	_user->Clear();
+
+	_user->SetSSNID(_ssnid);
 	_user->account_seq = _req->account_seq;
+	_user->SetFinalizer((IFinalizer*)this);
+
 	GLOBAL::USER_MANAGER.Insert(_user);
 
 	auto packet = new NET::CPacket(PROTOCOL::ID::GS_LOGIN_RES, sizeof(PROTOCOL::GS_LOGIN_RES));
